@@ -1,7 +1,9 @@
 .g-doc {
     font-size: 14px;
-    font-family:MicrosoftYaHei;
+    font-family: MicrosoftYaHei;
+    min-width: 1080px;
 }
+
 
 
 
@@ -24,18 +26,19 @@
     height: 40px;
     margin-left: 48px;
     margin-top: 12px;
-    background-color: yellow
 }
 
 .g-hd-logo img {
     width: 100%;
     height: 100%;
 }
-.g-hd-nav{
+
+.g-hd-nav {
     float: left;
     margin-left: 52px;
 }
-.g-hd-nav ul{
+
+.g-hd-nav ul {
     float: left;
     height: 64px;
 }
@@ -43,28 +46,70 @@
 .g-hd-nav ul li {
     float: left;
     margin-right: 44px;
-    line-height:64px;
-
+    line-height: 64px;
 }
 
-.g-hd-modal{
+.g-hd-modal {
     width: 100%;
     height: 538px;
     background: #ccc;
     position: absolute;
     top: 64px;
     left: 0;
-
 }
-.g-hd-modal-l{
+
+.g-hd-modal-l {
     width: 40%;
     height: 100%;
-    background: yellow;
+    background: #EFF6F6;
+    padding-top: 54px;
+    float: left;
+    box-sizing: border-box;
 }
-.g-hd-modal-r{
+
+.g-hd-modal-l ul {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.g-hd-modal-l li {
+    height: 40px;
+    line-height: 40px;
+    padding: 0 50px;
+}
+.g-hd-modal-l li embed{
+        float: right;
+    margin-top: 12px;
+    display: none;
+}
+.g-hd-modal-l .f-bg-main embed{
+    display: block;
+}
+.g-hd-modal-l .f-bg-main a{
+    color: #fff;
+}
+.g-hd-modal-l .f-bg-main a:hover{
+        color: #fff;
+}
+.g-hd-modal-l li a:hover {
+    color: #0DC2B8
+}
+
+.g-hd-modal-r {
     width: 60%;
     height: 100%;
+    float: left;
+    padding: 36px;
+    box-sizing: border-box;
 }
+
+.g-hd-modal-r .pull-left,.g-hd-modal-r .pull-right{
+    width: 50%;
+    height: 300px;
+}
+
+
+
 /** 
  * header
  * end
@@ -77,11 +122,40 @@
 
 
 
+
 /**
  * common
  */
 
+
 /*主题色*/
+
 .f-c-main {
     color: #0DC2B8;
+}
+
+.f-bg-main {
+    background: #0DC2B8;
+}
+/*常用*/
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+/*元件*/
+
+.title-nav{
+
+}
+.title-nav dt{
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.title-nav dd{
+    font-size: 16px;
 }
