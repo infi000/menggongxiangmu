@@ -24,6 +24,7 @@ body {
 
 
 
+
 /** 
  * header
  * start
@@ -138,6 +139,7 @@ body {
 
 
 
+
 /** 
  * header
  * end
@@ -205,6 +207,50 @@ body {
     margin-top: 50px;
 }
 
+#product-page .product-series li {
+    margin-right: 48px;
+    float: left;
+}
+
+#product-page .product-series li a {
+    font-size: 16px;
+}
+
+#product-page .product-series li a:hover {
+    color: #0DC2B8;
+}
+
+#product-page .product-intro li {
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#product-page .product-intro li a {
+    width: 234px;
+    height: 300px;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    display: block;
+    box-sizing: border-box;
+
+}
+
+#product-page .product-intro li a:hover{
+    color: #0DC2B8;
+    box-shadow: 0px 0px 22px 1px #ccc;
+}
+#product-page .product-intro dt {
+    margin-top: 23px;
+}
+
+#product-page .product-intro dd {
+    line-height: 22px;
+    margin-top: 26px;
+}
+
+
+
 
 /*body end*/
 
@@ -217,31 +263,39 @@ body {
     height: 435px;
     background: rgba(243, 247, 253, 1);
     box-sizing: border-box;
-    padding-top:64px;
+    padding-top: 64px;
 }
 
-.g-ft-con{
-       width: 25%;
+.g-ft-con {
+    width: 25%;
     padding-left: 80px;
     box-sizing: border-box;
 }
 
-.g-ft-con dt{
+.g-ft-con dt {
     font-size: 20px;
     margin-bottom: 28px;
     font-weight: 600;
 }
-.g-ft-con dd{
+
+.g-ft-con dd {
     color: #7F7F7F;
     line-height: 22px;
     font-size: 14px;
     margin-bottom: 12px;
 }
-.copyright{
+
+.g-ft-con dd a {
+    color: #7F7F7F;
+}
+
+.copyright {
     font-size: 12px;
     color: #7F7F7F;
     text-align: center;
 }
+
+
 /*footer end*/
 
 
@@ -259,6 +313,7 @@ body {
 .f-bg-main {
     background: #0DC2B8;
 }
+
 
 
 
@@ -291,6 +346,7 @@ body {
 
 
 
+
 /*字体*/
 
 .f-size-12 {
@@ -299,7 +355,23 @@ body {
 
 
 
+
 /*元件*/
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    background-color: white;
+    margin-bottom: 64px;
+}
+
+.banner-slogan {
+    color: #0DC2B8;
+    font-size: 32px;
+    position: relative;
+}
 
 .title-nav {}
 
@@ -322,10 +394,12 @@ body {
 .g-con {
     width: 100%;
 }
+
 .g-con-1 {
     margin: 0 auto;
     width: 1226px;
 }
+
 .g-con-tt1 {
     font-size: 20px;
     margin-top: 64px;
@@ -340,4 +414,25 @@ body {
 .g-con-tt2 {
     font-size: 16px;
     margin-bottom: 24px;
+}
+
+
+.page {
+text-align: center;
+}
+.page ul{
+    float: left;
+}
+.page li{
+    float: left;
+}
+.page li a{
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: block;
+    margin-right: 8px;
 }
