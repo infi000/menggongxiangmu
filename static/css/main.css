@@ -25,6 +25,7 @@ body {
 
 
 
+
 /** 
  * header
  * start
@@ -140,6 +141,7 @@ body {
 
 
 
+
 /** 
  * header
  * end
@@ -225,6 +227,10 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+#product-page .product-con .product-intro li {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
 
 #product-page .product-intro li a {
     width: 234px;
@@ -233,13 +239,14 @@ body {
     border-radius: 8px;
     display: block;
     box-sizing: border-box;
-
 }
 
-#product-page .product-intro li a:hover{
+
+#product-page .product-intro li a:hover {
     color: #0DC2B8;
     box-shadow: 0px 0px 22px 1px #ccc;
 }
+
 #product-page .product-intro dt {
     margin-top: 23px;
 }
@@ -249,8 +256,74 @@ body {
     margin-top: 26px;
 }
 
+#product-page .product-nav span {
+    margin: 0 4px;
+}
+#product-page .product-img{
+    width: 100%;
+    height: 800px;
+    box-sizing: border-box;
+    border: 1px solid RGBA(217, 217, 217, 1);
+    border-radius: 8px ; 
+    margin: 36px 0 24px;
+    text-align: center;
 
+}
 
+#product-page .product-img img{
+    width: 580px;
+    height: 580px;
+    margin-top: 120px;
+}
+#product-page .product-detail-t1 {
+    font-size: 16px;
+    color: RGBA(0, 0, 0, 0.85);
+    margin-bottom: 30px;
+}
+
+#product-page .product-detail-t2 {
+    font-size: 14px;
+    color: RGBA(0, 0, 0, 0.65);
+    margin-top: 20px;
+    margin-bottom: 4px;
+}
+
+#product-page .product-detail-p {
+    font-size: 14px;
+    color: RGBA(0, 0, 0, 0.45);
+    line-height: 20px;
+}
+
+#product-page .product-detail-con {
+    margin-bottom: 40px;
+}
+
+#cooperation-page .cooperation-number {
+    width: 296px;
+    margin-right: 14px;
+}
+#cooperation-page .cooperation-number dt{
+    height: 188px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 24px;
+    
+}
+
+#cooperation-page .cooperation-number dt img{
+    width: 220px;
+    height: 56px;
+    margin: 66px auto 0;
+}
+#cooperation-page .cooperation-number dd{
+    font-size: 16px;
+
+}
+#cooperation-page .cooperation-number dd a{
+    font-size: 14px;
+}
 
 /*body end*/
 
@@ -296,6 +369,7 @@ body {
 }
 
 
+
 /*footer end*/
 
 
@@ -313,6 +387,7 @@ body {
 .f-bg-main {
     background: #0DC2B8;
 }
+
 
 
 
@@ -347,11 +422,13 @@ body {
 
 
 
+
 /*字体*/
 
 .f-size-12 {
     font-size: 12px;
 }
+
 
 
 
@@ -418,15 +495,18 @@ body {
 
 
 .page {
-text-align: center;
+    text-align: center;
 }
-.page ul{
+
+.page ul {
     float: left;
 }
-.page li{
+
+.page li {
     float: left;
 }
-.page li a{
+
+.page li a {
     width: 32px;
     height: 32px;
     line-height: 32px;
