@@ -26,6 +26,8 @@ body {
 
 
 
+
+
 /** 
  * header
  * start
@@ -142,6 +144,8 @@ body {
 
 
 
+
+
 /** 
  * header
  * end
@@ -227,6 +231,7 @@ body {
     margin-right: 10px;
     margin-bottom: 10px;
 }
+
 #product-page .product-con .product-intro li {
     margin-right: 6px;
     margin-bottom: 6px;
@@ -256,25 +261,29 @@ body {
     margin-top: 26px;
 }
 
-#product-page .product-nav span {
+.product-nav span {
     margin: 0 4px;
 }
-#product-page .product-img{
+.product-nav a:hover{
+
+    color: #0DC2B8;
+}
+#product-page .product-img {
     width: 100%;
     height: 800px;
     box-sizing: border-box;
     border: 1px solid RGBA(217, 217, 217, 1);
-    border-radius: 8px ; 
+    border-radius: 8px;
     margin: 36px 0 24px;
     text-align: center;
-
 }
 
-#product-page .product-img img{
+#product-page .product-img img {
     width: 580px;
     height: 580px;
     margin-top: 120px;
 }
+
 #product-page .product-detail-t1 {
     font-size: 16px;
     color: RGBA(0, 0, 0, 0.85);
@@ -302,29 +311,118 @@ body {
     width: 296px;
     margin-right: 14px;
 }
-#cooperation-page .cooperation-number dt{
+
+#cooperation-page .cooperation-number dt {
     height: 188px;
     box-sizing: border-box;
     border: 1px solid #ccc;
     border-radius: 8px;
     text-align: center;
     margin-bottom: 24px;
-    
 }
 
-#cooperation-page .cooperation-number dt img{
+#cooperation-page .cooperation-number dt img {
     width: 220px;
     height: 56px;
     margin: 66px auto 0;
 }
-#cooperation-page .cooperation-number dd{
+
+#cooperation-page .cooperation-number dd {
     font-size: 16px;
-
+    margin-bottom: 10px;
 }
-#cooperation-page .cooperation-number dd a{
+
+#cooperation-page .cooperation-number dd a {
     font-size: 14px;
+    color: #8b8b8b;
 }
 
+.news-box {
+    padding: 24px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.news-box:hover {
+    box-shadow: 0px 0px 16px 2px rgba(217, 217, 217, 1);
+}
+
+.news-box-left {
+    margin-right: 36px;
+}
+
+.news-box-left img {
+    width: 320px;
+    height: 188px;
+}
+
+.news-box-mid {
+    margin-top: 40px;
+    width: 640px;
+}
+
+.news-box-mid dt {
+    font-size: 16px;
+    color: #0DC2B8;
+    margin-bottom: 12px;
+}
+
+.news-box-mid dd {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.news-box-right {
+    margin-top: 40px;
+}
+
+.news-box-right dt {
+    font-size: 12px;
+    margin-bottom: 12px;
+}
+
+.news-title{
+     padding-bottom: 16px;
+     border-bottom: 1px solid #ddd;
+}
+.news-title dt{
+    font-size: 16px;
+    line-height: 24px;
+}
+.news-title dd{
+    font-size: 12px;
+    line-height: 20px;
+    color: #ccc;
+}
+
+
+.news-img{
+    margin-top: 16px;
+    margin-bottom: 36px;
+    width: 100%;
+}
+
+
+.news-h1{
+color: RGBA(0, 0, 0, 0.85);
+font-size: 16px;
+line-height: 22px;
+margin-bottom: 56px;
+}
+
+.news-h2{
+    color: RGBA(0, 0, 0, 0.65);
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 26px;
+}
+
+.news-con{
+    color: RGBA(0, 0, 0, 0.45);
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 46px;
+}
 /*body end*/
 
 
@@ -370,6 +468,8 @@ body {
 
 
 
+
+
 /*footer end*/
 
 
@@ -387,6 +487,8 @@ body {
 .f-bg-main {
     background: #0DC2B8;
 }
+
+
 
 
 
@@ -423,11 +525,15 @@ body {
 
 
 
+
+
 /*字体*/
 
 .f-size-12 {
     font-size: 12px;
 }
+
+
 
 
 
@@ -448,6 +554,7 @@ body {
     color: #0DC2B8;
     font-size: 32px;
     position: relative;
+    float: left;
 }
 
 .title-nav {}
@@ -496,6 +603,9 @@ body {
 
 .page {
     text-align: center;
+    margin-top: 78px;
+    margin-bottom: 209px;
+    display: inline-block;
 }
 
 .page ul {
@@ -515,4 +625,29 @@ body {
     border-radius: 8px;
     display: block;
     margin-right: 8px;
+}
+.page li a:hover{
+  background:rgba(13,194,184,1);
+  color: #fff;
+}
+.page li a.active{
+      background:rgba(13,194,184,1);
+  color: #fff;
+}
+.btn {
+width:87px;
+height:32px;
+line-height: 32px;
+background:rgba(13,194,184,1);
+display: inline-block;
+text-align: center;
+font-size: 14px;
+color: #fff;
+}
+.btn:after{
+    content: ">";
+}
+.btn:hover {
+color: #ddd;
+background: rgb(39, 204, 195);
 }
