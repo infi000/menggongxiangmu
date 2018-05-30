@@ -28,6 +28,9 @@ body {
 
 
 
+
+
+
 /** 
  * header
  * start
@@ -71,16 +74,25 @@ body {
     line-height: 64px;
 }
 
+.g-hd-nav li a:hover {
+    color: #0DC2B8;
+}
+
 .g-hd-modal {
     width: 100%;
     height: 538px;
-    background: #ccc;
+    background: #fff;
     position: absolute;
     top: 64px;
     left: 0;
     z-index: 1;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
 }
-
+.g-hd-modal-con{
+    width: 100%;
+    height: 100%;
+}
 .g-hd-modal-l {
     width: 40%;
     height: 100%;
@@ -136,6 +148,9 @@ body {
     width: 50%;
     height: 300px;
 }
+
+
+
 
 
 
@@ -264,10 +279,12 @@ body {
 .product-nav span {
     margin: 0 4px;
 }
-.product-nav a:hover{
+
+.product-nav a:hover {
 
     color: #0DC2B8;
 }
+
 #product-page .product-img {
     width: 100%;
     height: 800px;
@@ -381,91 +398,102 @@ body {
     margin-bottom: 12px;
 }
 
-.news-title{
-     padding-bottom: 16px;
-     border-bottom: 1px solid #ddd;
+.news-title {
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ddd;
 }
-.news-title dt{
+
+.news-title dt {
     font-size: 16px;
     line-height: 24px;
 }
-.news-title dd{
+
+.news-title dd {
     font-size: 12px;
     line-height: 20px;
     color: #ccc;
 }
 
 
-.news-img{
+.news-img {
     margin-top: 16px;
     margin-bottom: 36px;
     width: 100%;
 }
 
 
-.news-h1{
-color: RGBA(0, 0, 0, 0.85);
-font-size: 16px;
-line-height: 22px;
-margin-bottom: 56px;
+.news-h1 {
+    color: RGBA(0, 0, 0, 0.85);
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 56px;
 }
 
-.news-h2{
+.news-h2 {
     color: RGBA(0, 0, 0, 0.65);
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 26px;
 }
 
-.news-con{
+.news-con {
     color: RGBA(0, 0, 0, 0.45);
     font-size: 14px;
     line-height: 22px;
     margin-bottom: 46px;
 }
 
-.contact-box .pull-left{
+.contact-box .pull-left {
     width: 33%;
     text-align: center;
 }
-.contact-box .pull-left dt{
+
+.contact-box .pull-left dt {
     margin-bottom: 36px;
-}.contact-box .pull-left dd {
+}
+
+.contact-box .pull-left dd {
     margin-bottom: 10px;
     font-size: 14px;
     /*color: #ddd;*/
 }
-.contact-box .pull-left dd b{
+
+.contact-box .pull-left dd b {
     font-size: 20px;
 }
 
-.contact-box .pull-left img{
+.contact-box .pull-left img {
 
     height: 72px;
 }
+
 .contact-box2 {
     margin-bottom: 200px;
 }
-.contact-box2 .pull-left{
+
+.contact-box2 .pull-left {
     width: 45%;
     text-align: center;
 }
 
-.contact-box2 dt{
+.contact-box2 dt {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 16px;
 }
 
-.contact-box2 dd{
+.contact-box2 dd {
     color: RGBA(0, 0, 0, 0.45);
     font-size: 14px;
     margin-bottom: 26px;
 }
 
-.contact-box2 dd a{
+.contact-box2 dd a {
     color: RGBA(13, 194, 184, 1);
 }
+
+
+
 
 /*body end*/
 
@@ -514,6 +542,9 @@ margin-bottom: 56px;
 
 
 
+
+
+
 /*footer end*/
 
 
@@ -531,6 +562,9 @@ margin-bottom: 56px;
 .f-bg-main {
     background: #0DC2B8;
 }
+
+
+
 
 
 
@@ -571,11 +605,17 @@ margin-bottom: 56px;
 
 
 
+
+
+
 /*字体*/
 
 .f-size-12 {
     font-size: 12px;
 }
+
+
+
 
 
 
@@ -610,6 +650,83 @@ margin-bottom: 56px;
 
 .title-nav dd {
     font-size: 16px;
+}
+
+.title-link {
+    margin-top: 36px;
+}
+
+.title-link span {
+    color: RGBA(127, 127, 127, 1);
+    font-size: 12px;
+}
+
+.title-link li {
+    margin-bottom: 20px;
+}
+
+
+.title-link a:hover {
+    color: RGBA(13, 194, 184, 1);
+}
+.title-link li span{
+    float: right;
+}
+.title-img {
+    margin-top: 100px;
+}
+
+.title-img img {
+    width: 100%;
+    margin-bottom: 12px;
+    border-radius: 8px;
+}
+
+.title-img p {
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(127, 127, 127, 1);
+    line-height: 20px;
+    margin-bottom: 8px;
+}
+
+.title-img p a {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    color: rgba(13, 194, 184, 1);
+    line-height: 24px;
+}
+
+.title-product {
+    margin-top: 140px;
+}
+.title-product a {
+    width: 30%;
+    display: inline-block;
+}
+
+.title-product a img {
+    width: 100%;
+}
+
+.title-product a dt {
+    height: 180px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.title-product a dt:hover{
+        box-shadow: 0px 0px 11px rgba(217, 217, 217, 1);
+
+}
+
+
+.title-product a dd {
+    font-size: 12px;
+    font-family: MicrosoftYaHei;
+    color: rgba(13, 194, 184, 1);
+    line-height: 24px;
 }
 
 .line {
@@ -667,28 +784,33 @@ margin-bottom: 56px;
     display: block;
     margin-right: 8px;
 }
-.page li a:hover{
-  background:rgba(13,194,184,1);
-  color: #fff;
+
+.page li a:hover {
+    background: rgba(13, 194, 184, 1);
+    color: #fff;
 }
-.page li a.active{
-      background:rgba(13,194,184,1);
-  color: #fff;
+
+.page li a.active {
+    background: rgba(13, 194, 184, 1);
+    color: #fff;
 }
+
 .btn {
-width:87px;
-height:32px;
-line-height: 32px;
-background:rgba(13,194,184,1);
-display: inline-block;
-text-align: center;
-font-size: 14px;
-color: #fff;
+    width: 87px;
+    height: 32px;
+    line-height: 32px;
+    background: rgba(13, 194, 184, 1);
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
 }
-.btn:after{
+
+.btn:after {
     content: ">";
 }
+
 .btn:hover {
-color: #ddd;
-background: rgb(39, 204, 195);
+    color: #ddd;
+    background: rgb(39, 204, 195);
 }
