@@ -13,13 +13,13 @@ $(document).ready(function(e) {
             $(".g-hd-modal-con[datatype=" + dt + "]").show();
 
         } else {
-            $(".g-hd-modal").slideUp();
+            $(".g-hd-modal").hide();
         }
     });
     $(".g-hd").mouseleave(function(e) {
         event.stopPropagation();
         $(".g-hd-modal").stop();
-        $(".g-hd-modal").slideUp();
+        $(".g-hd-modal").hide();
     });
 });
 

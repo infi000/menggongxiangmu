@@ -88,6 +88,7 @@ body {
     z-index: 1;
     box-sizing: border-box;
     border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
 }
 .g-hd-modal-con{
     width: 100%;
@@ -531,6 +532,12 @@ body {
 .g-ft-con dd a {
     color: #7F7F7F;
 }
+
+.g-ft-con .iconfont{
+    font-size: 40px;
+    margin-right: 10px;
+}
+
 
 .copyright {
     font-size: 12px;
