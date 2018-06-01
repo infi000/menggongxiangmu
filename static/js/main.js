@@ -17,9 +17,9 @@ $(document).ready(function(e) {
         }
     });
     $(".g-hd").mouseleave(function(e) {
-        event.stopPropagation();
-        $(".g-hd-modal").stop();
-        $(".g-hd-modal").hide();
+        // event.stopPropagation();
+        // $(".g-hd-modal").stop();
+        // $(".g-hd-modal").hide();
     });
 });
 
@@ -141,14 +141,13 @@ function createDOM_navModal(argument) {
                             <ul class="title-link">\
                                 <li>联系电话：+68 13810586885</li>\
                                 <li>联系邮箱： service@deeputech.com</li>\
-                                <li>地理位置: 海淀区海淀南路甲21号</li>\
-                                <li>中关村知识产权大厦A座两层</li>\
+                                <li>地理位置: 北京市 西城区 红居街13号 楼翔峰大厦5层</li>\
                             </ul>\
                         </div>\
                         <div class="pull-right">\
                             <div class="title-img">\
                                 <p>地图</p>\
-                                <img src="./static/img/about1.png" alt="">\
+                                <iframe src="./map.html" width="100%" height="300px"></iframe>\
                             </div>\
                         </div>\
                     </div>\
