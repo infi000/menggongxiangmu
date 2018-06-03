@@ -31,6 +31,7 @@ body {
 
 
 
+
 /** 
  * header
  * start
@@ -90,10 +91,12 @@ body {
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
 }
-.g-hd-modal-con{
+
+.g-hd-modal-con {
     width: 100%;
     height: 100%;
 }
+
 .g-hd-modal-l {
     width: 40%;
     height: 100%;
@@ -149,6 +152,7 @@ body {
     width: 50%;
     height: 300px;
 }
+
 
 
 
@@ -493,8 +497,54 @@ body {
     color: RGBA(13, 194, 184, 1);
 }
 
+.job-box-l {
+    width: 296px;
+    border-radius: 8px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    padding: 0 24px;
+    box-sizing: border-box;
+}
 
+.job-box-l li {
+    padding: 16px 0;
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+}
 
+.job-box-l li a{
+    font-size: 16px;
+}
+
+.job-box-l li a:hover{
+    color: #0DC2B8;
+}
+
+.job-box-l li:last-child{
+    border: 0;
+}
+.job-box-r {
+    width: 916px;
+    border-radius: 8px;
+    border: 1px solid rgba(217, 217, 217, 1);
+    padding: 16px 50px 40px;
+    box-sizing: border-box;
+}
+.job-box-r table{
+    font-size: 16px;
+   
+}
+
+.job-box-r table td{
+     line-height: 24px;
+    padding-bottom: 20px;
+    color: #666;
+}
+.job-box-r table td b{
+    color: #000;
+}
+.job-tag{
+    width: 87px;
+    vertical-align: top;
+}
 
 /*body end*/
 
@@ -533,7 +583,7 @@ body {
     color: #7F7F7F;
 }
 
-.g-ft-con .iconfont{
+.g-ft-con .iconfont {
     font-size: 40px;
     margin-right: 10px;
 }
@@ -544,6 +594,7 @@ body {
     color: #7F7F7F;
     text-align: center;
 }
+
 
 
 
@@ -569,6 +620,7 @@ body {
 .f-bg-main {
     background: #0DC2B8;
 }
+
 
 
 
@@ -615,11 +667,13 @@ body {
 
 
 
+
 /*字体*/
 
 .f-size-12 {
     font-size: 12px;
 }
+
 
 
 
@@ -676,9 +730,11 @@ body {
 .title-link a:hover {
     color: RGBA(13, 194, 184, 1);
 }
-.title-link li span{
+
+.title-link li span {
     float: right;
 }
+
 .title-img {
     margin-top: 100px;
 }
@@ -707,6 +763,7 @@ body {
 .title-product {
     margin-top: 140px;
 }
+
 .title-product a {
     width: 30%;
     display: inline-block;
@@ -723,9 +780,8 @@ body {
     margin-bottom: 24px;
 }
 
-.title-product a dt:hover{
-        box-shadow: 0px 0px 11px rgba(217, 217, 217, 1);
-
+.title-product a dt:hover {
+    box-shadow: 0px 0px 11px rgba(217, 217, 217, 1);
 }
 
 

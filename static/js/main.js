@@ -17,16 +17,16 @@ $(document).ready(function(e) {
         }
     });
     $(".g-hd").mouseleave(function(e) {
-        // event.stopPropagation();
-        // $(".g-hd-modal").stop();
-        // $(".g-hd-modal").hide();
+        event.stopPropagation();
+        $(".g-hd-modal").stop();
+        $(".g-hd-modal").hide();
     });
 });
 
 
 
 function createDOM_navModal(argument) {
-    var html='<div class="g-hd-modal-con" datatype="about" style="display: none">\
+    var html = '<div class="g-hd-modal-con" datatype="about" style="display: none">\
                     <div class="g-hd-modal-l">\
                         <ul>\
                             <li class="f-bg-main"><a href="">公司简介 <embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
