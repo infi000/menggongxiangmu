@@ -9,7 +9,7 @@ $(document).ready(function(e) {
         $(".g-hd-modal-con").hide();
         if (dt) {
 
-            $(".g-hd-modal").slideDown();
+            $(".g-hd-modal").slideDown('fast');
             $(".g-hd-modal-con[datatype=" + dt + "]").show();
 
         } else {
@@ -61,11 +61,10 @@ function createDOM_navModal(argument) {
                 <div class="g-hd-modal-con" datatype="product" style="display: none">\
                     <div class="g-hd-modal-l">\
                         <ul>\
-                            <li class="f-bg-main"><a href="">微模块IDC数据中心建设 <embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
-                            <li><a href="">软件项目开发与实施<embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
-                            <li><a href="">大数据平台建设与应用开发<embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
-                            <li><a href="">重点数据安全保护<embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
-                            <li><a href="">IT系统监控与运维<embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
+                            <li class="f-bg-main"><a href="./product.html?nav=1">微模块IDC数据中心建设 <embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
+                            <li><a href="./product.html?nav=2">软件工程项目开发与服务<embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
+                            <li><a href="./product.html?nav=3">大数据平台建设与应用开发<embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
+                            <li><a href="./product.html?nav=4">信息系统运维监管平台<embed src="./static/img/arrow.svg" type="image/svg+xml" pluginspage="http://www.adobe.com/svg/viewer/install/" /></a></li>\
                         </ul>\
                     </div>\
                     <div class="g-hd-modal-r">\
