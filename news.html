@@ -14,6 +14,7 @@
     <script src="./static/js/jquery.min.js"></script>
     <script src="./static/js/tools.js"></script>
     <script src="./static/js/main.js"></script>
+    <script src="./static/js/data.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <div class="g-hd-logo"><img src="./static/img/logo.png" alt=""></div>
             <div class="g-hd-nav">
                 <ul>
-                     <li><a href="./index.html">首页</a></li>
+                    <li><a href="./index.html">首页</a></li>
                     <li><a datatype="about" href="./about.html">关于镝普</a></li>
                     <li><a datatype="product" href="./product.html">产品与服务</a></li>
                     <li><a href="./cooperation.html">合作伙伴</a></li>
@@ -31,7 +32,6 @@
                 </ul>
             </div>
             <div class="g-hd-modal" style="display: none">
-
             </div>
         </div>
         <div class="g-bd">
@@ -43,75 +43,55 @@
             <div class="g-con-1 product-nav">
                 <span>你的位置：</span><a href="./index.html">首页</a><span>></span><span class="f-c-main">新闻</span>
             </div>
-            <div class="g-con-1" style="margin-top:41px;">
-                <div class="news-box">
-                    <div class="pull-left news-box-left"><img src="./static/img/news1.jpg" alt=""></div>
-                    <div class="pull-left news-box-mid">
-                        <dl>
-                            <dt>
-                                镝普为东莞产业转型升级树立典范
-                            </dt>
-                            <dd>镝普科技（北京）有限公司创立于2014年，公司以科技创新为理念、以大数据科技为导向，提供软件开发、</dd>
-                        </dl>
+            <div class="g-con-1" style="margin-top:41px;margin-bottom:241px;" id="news-show">
+                <!--       <div class="g-con-1 text-center" style="display: none">
+                    <div class="page">
+                        <ul>
+                            <li><a href="" class="active">1</a></li>
+                            <li><a href="">2</a></li>
+                            <li><a href="">3</a></li>
+                            <li><a href="">4</a></li>
+                        </ul>
+                        <div class="clear"></div>
                     </div>
-                    <div class="pull-right news-box-right">
-                        <dl>
-                            <dt>2017-11-23</dt>
-                            <dd><a class="btn" href="./newsdetail.html">更多 </a></dd>
-                        </dl>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="news-box">
-                    <div class="pull-left news-box-left"><img src="./static/img/news1.jpg" alt=""></div>
-                    <div class="pull-left news-box-mid">
-                        <dl>
-                            <dt>
-                                镝普为东莞产业转型升级树立典范
-                            </dt>
-                            <dd>镝普科技（北京）有限公司创立于2014年，公司以科技创新为理念、以大数据科技为导向，提供软件开发、</dd>
-                        </dl>
-                    </div>
-                    <div class="pull-right news-box-right">
-                        <dl>
-                            <dt>2017-11-23</dt>
-                            <dd><a class="btn" href="./newsdetail.html">更多 </a></dd>
-                        </dl>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                <div class="news-box">
-                    <div class="pull-left news-box-left"><img src="./static/img/news1.jpg" alt=""></div>
-                    <div class="pull-left news-box-mid">
-                        <dl>
-                            <dt>
-                                镝普为东莞产业转型升级树立典范
-                            </dt>
-                            <dd>镝普科技（北京）有限公司创立于2014年，公司以科技创新为理念、以大数据科技为导向，提供软件开发、</dd>
-                        </dl>
-                    </div>
-                    <div class="pull-right news-box-right">
-                        <dl>
-                            <dt>2017-11-23</dt>
-                            <dd><a class="btn" href="./newsdetail.html">更多 </a></dd>
-                        </dl>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-                      <div class="g-con-1 text-center" >
-                <div class="page">
-                    <ul>
-                        <li><a href="" class="active">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">4</a></li>
-                    </ul>
-                    <div class="clear"></div>
-                </div>
-            </div>
+                </div> -->
             </div>
         </div>
     </div>
 </body>
+<script>
+$(document).ready(function(e) {
+    createDom_news();
+});
+
+
+function createDom_news() {
+    var html = '';
+    for (var i = 0; i < NEWS.length; i++) {
+        var title = NEWS[i]['title'],
+            date = NEWS[i]['date'],
+            desc = NEWS[i]['desc'];
+        content = NEWS[i]['content'];
+        html += '<div class="news-box">\
+                    <div class="pull-left news-box-left"><img src="./static/img/newsdetail' + i + '.jpg" alt=""></div>\
+                    <div class="pull-left news-box-mid">\
+                        <dl>\
+                            <dt>' + title + '</dt>\
+                            <dd>' + desc + '</dd>\
+                        </dl>\
+                    </div>\
+                    <div class="pull-right news-box-right">\
+                        <dl>\
+                            <dt>' + date + '</dt>\
+                            <dd><a class="btn" href="./newsdetail.html?num=' + i + '">更多 </a></dd>\
+                        </dl>\
+                    </div>\
+                    <div class="clear"></div>\
+                </div>';
+    }
+
+    $("#news-show").html(html);
+}
+</script>
 
 </html>

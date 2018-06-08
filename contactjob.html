@@ -14,6 +14,7 @@
     <script src="./static/js/jquery.min.js"></script>
     <script src="./static/js/tools.js"></script>
     <script src="./static/js/main.js"></script>
+    <script src="./static/js/data.js"></script>
 </head>
 
 <body>
@@ -42,20 +43,15 @@
             <div class="g-con-1" style="margin-top:84px;margin-bottom:84px;">
                 <div class="pull-left job-box-l">
                     <ul id="job-list">
-                        <li><a href="" class="f-c-main">java开发工程师</a></li>
-                        <li><a href="">java开发工程师</a></li>
-                        <li><a href="">java开发工程师</a></li>
-                        <li><a href="">java开发工程师</a></li>
-                        <li><a href="">java开发工程师</a></li>
                     </ul>
                 </div>
                 <div class="pull-right job-box-r">
                     <table>
                         <tr>
                             <td class="job-tag"><b>职位名称：</b></td>
-                            <td><span id="job-name">java开发工程师</span></td>
+                            <td><span id="job-name">-</span></td>
                             <td class="job-tag"><b>工作地点：</b></td>
-                            <td><span id="job-addr">北京</span></td>
+                            <td><span id="job-addr">-</span></td>
                         </tr>
                         <tr>
                             <td class="job-tag"><b>职位类别：</b></td>
@@ -66,23 +62,14 @@
                         <tr>
                             <td class="job-tag"><b>职位描述：</b></td>
                             <td colspan="3">
-                                <p id="job-desc">1、参与公司各系统平台的开发；
-                                    <br> 2、根据开发进度和任务分配，完成软件产品的设计、研发、编程任务；
-                                    <br> 3、参与编制与项目相关的技术文档；
-                                    <br> 4、协助测试人员完成软件系统及模块的测试和bug修复；
-                                    <br> 5、负责指导初中级开发工程师解决开发过程中遇到的技术问题。
+                                <p id="job-desc">
                                 </p>
                             </td>
                         </tr>
                         <tr>
                             <td class="job-tag"><b>任职要求：</b></td>
                             <td colspan="3">
-                                <p id="job-require">1、本科（含）以上学历，计算机相关专业；
-                                    <br> 2、3年以上JAVA实际开发经验；
-                                    <br>3、精通java编程，熟悉Spring、Maven等技术或框架；
-                                    <br>4、熟悉Linux操作系统，掌握常用的Linux命令；
-                                    <br>5、对技术有激情，喜欢钻研，能快速接受和掌握新技术，有较强的学习能力；
-                                    <br> 6、具有良好的团队精神和沟通能力，高度责任心，工作态度认真，严谨踏实，可承受一定的工作压力。 
+                                <p id="job-require">
                                 </p>
                             </td>
                         </tr>
@@ -100,8 +87,48 @@
                 <div class="clear"></div>
             </div>
         </div>
-
-        <script src='./static/js/job.js'></script>
 </body>
+<script>
+function createDom_jobList() {
+    var html = "";
+    for (var i = 0; i < JOBDATA.length; i++) {
+        var li = JOBDATA[i],
+            name = li['name'],
+            className = (i == 0) ? 'f-c-main' : '';
+        html += '<li><a class="' + className + ' btn-chooseJob" datatype="' + i + '">' + name + '</a></li>'
+    };
+    $("#job-list").html(html);
+};
+
+
+function createDom_jobTable(num) {
+    var data = JOBDATA[num];
+    $("#job-name").html(data['name']);
+    $("#job-addr").html(data['addr']);
+    $("#job-tagname").html(data['tag']);
+    $("#job-way").html(data['way']);
+    $("#job-desc").html(data['desc']);
+    $("#job-require").html(data['require']);
+};
+
+
+
+function domEvent() {
+    $('body').on("click", ".btn-chooseJob", function(e) {
+        console.log(e)
+        var num = $(this).attr('datatype');
+        createDom_jobTable(num);
+        $(".btn-chooseJob").attr('class', 'btn-chooseJob');
+        $(this).attr('class', 'f-c-main btn-chooseJob')
+    })
+};
+
+$(document).ready(function(e) {
+    createDom_jobList();
+    createDom_jobTable(0);
+    domEvent();
+
+})
+</script>
 
 </html>

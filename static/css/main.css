@@ -208,7 +208,7 @@ body {
     background: #fff
 }
 
-#about-page .about .pull-right .f-size-12 {
+#about-page .about .pull-right .f-size-14 {
     line-height: 20px;
 }
 
@@ -541,6 +541,11 @@ body {
 .job-box-r table td b{
     color: #000;
 }
+
+.job-box-r table td p{
+    font-family: MicrosoftYaHei;
+}
+
 .job-tag{
     width: 87px;
     vertical-align: top;
@@ -675,6 +680,10 @@ body {
 }
 
 
+.f-size-14 {
+    font-size: 14px;
+}
+
 
 
 
@@ -690,7 +699,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 400px;
+    height: 300px;
     background-color: white;
     margin-bottom: 64px;
 }
